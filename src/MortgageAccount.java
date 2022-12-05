@@ -5,9 +5,6 @@ public class MortgageAccount extends Account{
         this.monthlyInterestRate = monthlyInterestRate;
         this.typeOfAccount = "Mortgage account";
     }
-    @Override
-    public void withdraw(int amount) {
-        System.out.println("You can't withdraw from this account!");
-    }
+
 
 }

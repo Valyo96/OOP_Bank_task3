@@ -48,9 +48,9 @@ public class Main {
 
                                 } else if (choice2 == 3) {
                                     for (Account account : client.getAccountList()) {
-                                        if (account.getTypeOfAccount().equals("Deposit account")) {
+                                        if (account instanceof DepositAccount) {
                                             System.out.print("Amount of money to withdraw: ");
-                                            account.withdraw(UserInput.numeralInput());
+                                            ((DepositAccount) account).withdraw(UserInput.numeralInput());
                                         }
 
                                     }

@@ -23,6 +23,7 @@ public class Bank {
         int balance = UserInput.numeralInput();
         System.out.println();
         System.out.print("Select interest rate(to tva e typo , choveka sam da si izbira :D): ");
+
         int interestRate = UserInput.numeralInput();
         Account newAccount = Factory.accountFactory(choice  , balance , interestRate);
         customer.addAccountToList(newAccount);

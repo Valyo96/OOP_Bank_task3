@@ -7,8 +7,5 @@ public class LoanAccount extends Account {
     }
 
 
-    @Override
-    public void withdraw(int amount) {
-        System.out.println("You can't withdraw from this account!!");
-    }
+
 }

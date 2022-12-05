@@ -8,9 +8,6 @@ public class DepositAccount extends Account implements Withdrawable{
         this.typeOfAccount = "Deposit account";
     }
 
-
-
-
     @Override
     public void withdraw(int amount) {
         if (balance > 0) {

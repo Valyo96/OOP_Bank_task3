@@ -1,7 +1,5 @@
-import java.util.Scanner;
-import java.util.StringJoiner;
 
-public abstract class Account implements Depositable , Valueable , Withdrawable{
+public abstract class Account implements Depositable , Valueable{
     protected String typeOfAccount;
     protected int IBAN;
     protected int balance;
