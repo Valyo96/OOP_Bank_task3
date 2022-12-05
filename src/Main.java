@@ -1,17 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
         List<Customer> customers = new ArrayList<>();
-        List<Account> accounts = new ArrayList<>();
-        List<MortgageAccount> mortgageAccounts = new ArrayList<>();
-        List<DepositAccount> depositAccounts = new ArrayList<>();
-        List<LoanAccount> loanAccounts = new ArrayList<>();
         Bank bank = new Bank("Draining your money", customers);
-        Customer client = null;
         while (true) {
+            Customer client = null;
             System.out.println(bank.getName().toString() + " BANK");
             Menu.loginMenu();
             int choice = UserInput.numeralInput();
@@ -32,7 +27,7 @@ public class Main {
                                 int choice2 = UserInput.numeralInput();
                                 if (choice2 == 1) {
                                     Account acc = bank.openAccount(client);
-                                    accounts.add(acc);
+
                                     System.out.println("You have successfully opened " + acc.getTypeOfAccount());
                                 } else if (choice2 == 2) {
                                     int sizeOfAccList = client.getAccountList().size();
